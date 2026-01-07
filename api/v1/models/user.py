@@ -47,7 +47,7 @@ class Organization(BaseModel):
     
     # Relationships
     users = relationship("User", back_populates="organization")
-    # taxpayers = relationship("Taxpayer", back_populates="employer")
+    taxpayers = relationship("Taxpayer", back_populates="employer")
     
     def __repr__(self):
         return f"<Organization {self.name} ({self.type})>"

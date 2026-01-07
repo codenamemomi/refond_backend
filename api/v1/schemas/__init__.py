@@ -15,7 +15,23 @@ from api.v1.schemas.user import (
     TokenData,
 )
 
+from api.v1.schemas.taxpayer import (
+    TaxpayerBase,
+    TaxpayerCreate,
+    TaxpayerUpdate,
+    TaxpayerResponse,
+    TaxpayerDetailResponse,
+    TaxpayerFilter,
+    TaxpayerListResponse,
+    TaxpayerBulkCreate,
+    TaxpayerImportResult,
+    TaxType,
+    TaxpayerStatus,
+    NigerianState,
+)
+
 __all__ = [
+    # User schemas
     "UserBase",
     "UserCreate",
     "UserResponse",
@@ -30,4 +46,18 @@ __all__ = [
     "Token",
     "LoginRequest",
     "TokenData",
+    
+    # Taxpayer schemas
+    "TaxpayerBase",
+    "TaxpayerCreate",
+    "TaxpayerUpdate",
+    "TaxpayerResponse",
+    "TaxpayerDetailResponse",
+    "TaxpayerFilter",
+    "TaxpayerListResponse",
+    "TaxpayerBulkCreate",
+    "TaxpayerImportResult",
+    "TaxType",
+    "TaxpayerStatus",
+    "NigerianState",
 ]
